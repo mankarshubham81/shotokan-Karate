@@ -1,7 +1,7 @@
  import React from 'react'
  import { Heading,Text, Stack, VStack, Button, Image, Box, HStack } from "@chakra-ui/react"
  import './home.css';
- import { Link } from 'react-router-dom';
+//  import { Link } from 'react-router-dom';
  import vg from '../../assets/images/bg.png'; 
  import {CgGoogle, CgYoutube, CgInfinity} from 'react-icons/cg'; 
  import {SiFreecodecamp, SiCoursera, SiKhanacademy, SiUdemy} from 'react-icons/si'; 
@@ -22,21 +22,30 @@
             spacing={['16','56']}
             >
                 <VStack width={'full'} alignItems={['center','flex-end']} >
-                <Heading color={'gray.300'} children="Learn From The  Learners" size={'2xl'}/>
+                <Heading color={'darkgray'} children="Shotokan(松濤館) Karate" size={'2xl'}/>
                 <p></p>
-                <Text color={'gray.300'} textAlign={["center","left"]} children="Open Resource For Leaners" />
+                <Text color={'darkgray'} textAlign={["center","left"]} children="Open Resource For Leaners" />
                 <p></p>
-                <Link to="/courses">
-                    <Button color={'gray.300'} size={"lg"} bg={'red.500'}>
-                        Explore Now
-                    </Button>
-                </Link>
+                {/* <Link to=".inception"> */}
+                    {/* <div> */}
+                    {/* <a href="#about"></a> */}
+                    {/* <li> */}
+                        <a href={"#inception"}>
+                            <Button color={'lightgray'} size={"lg"} bg={'red.500'}>
+                                Explore Now
+                            </Button>
+                        </a>
+                    {/* </li> */}
+                    {/* </div> */}
+                {/* </Link> */}
                 </VStack>
                 <Image className='vector-graphics' boxSize={'md'} src={vg} objectFit={'contain'} />
             </Stack>
         </div>
-        <Box padding={'8'} bg={'black'} borderRadius={'3xl'}>
-            <Heading textAlign={'center'} fontFamily={'body'} color={'gray.300'} children="Our Source for Resources" />
+        <Box padding={'8'}>
+            <section className='inception' id='inception'>
+                <Heading paddingBottom={6} paddingTop={4} textAlign={'center'} fontFamily={'body'} color={'#777'} children="Start From Here" />
+            </section>
             <HStack className='brandsBanner' justifyContent={'space-between'} marginTop='4'>
                 <CgGoogle/>
                 <CgInfinity/>
