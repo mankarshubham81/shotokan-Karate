@@ -65,8 +65,8 @@
                 id="ytplayer"
                 // className={'ytVideo'}
                 // type="text/html"
-                width="90%"
-                height="90%"
+                width="560" 
+                height="315" 
                 src='https://www.youtube.com/embed/exBgWAIeIeg'
                 allowFullScreen="true"
                 webkitallowfullscreen="true"
