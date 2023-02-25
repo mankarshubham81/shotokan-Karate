@@ -1,6 +1,7 @@
  .container{
      height: 100vh;
      padding: 5rem;
+     padding-left: 2px;
      box-sizing: border-box;
     }
     
