@@ -21,7 +21,7 @@
             alignItems="center"
             spacing={['16','56']}
             >
-                <VStack width={'full'} alignItems={['center','flex-end']} >
+                <VStack width={'full'} alignItems={['center','center']} padding={'2'}>
                 <Heading color={'darkgray'} children="Shotokan(松濤館) Karate" size={'2xl'}/>
                 <p></p>
                 <Text color={'darkgray'} textAlign={["center","left"]} children="Open Resource For Leaners" />
@@ -423,6 +423,40 @@ A seedling has emerged from the ground to meet the sun, there’s a lot of room 
             >    
             </video> */}
         </div>
+
+
+        <Heading  paddingTop={1} textAlign={'center'} fontFamily={'body'} color={'darkgray'} children="Orange Belt (8 th Que)" />
+        
+
+        {/* <Heading  paddingTop={3} textAlign={'center'} fontFamily={'body'} color={'darkgray'} children="6.YOKO GERI  (Side Kick)" /> */}
+        {/* <Text fontSize='xl' textAlign={'center'} >Reffer this below video</Text> */}
+        <Heading  paddingTop={3} textAlign={'center'} fontFamily={'body'} color={'darkgray'} children="2) Heian Nidan" />
+        <div className="container2">
+
+            {/* <video autoPlay controls src={introVideo}>
+                
+            </video> */}
+            {/* <iframe src='https://www.youtube.com/embed/exBgWAIeIeg'
+                frameBorder='0'
+                // allow='autoplay; encrypted-media'
+                // allowfullscreen
+            /> */}
+            <iframe
+                title='video'
+                id="ytplayer"
+                // className={'ytVideo'}
+                // type="text/html"
+                width="560" 
+                height="315" 
+                src='https://www.youtube.com/embed/UgDPJCmsXt0'
+                allowFullScreen="true"
+                webkitallowfullscreen="true"
+                mozallowfullscreen="true"
+                // src={`https://www.youtube.com/embed/${videoId}?autoplay=0&origin=http://example.com&controls=0&rel=1`}
+                frameBorder="0"
+            ></iframe>
+        </div>
+
 
      </section>
    )
